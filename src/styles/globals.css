@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+@import "tw-animate-css";
+
+/* Theme variables and light/dark palettes */
+:root{
+  --radius: 0.6rem;
+  --bg: #f7f8fb;
+  --fg: #0f1724;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --primary: #6d28d9; /* purple */
+  --primary-foreground: #ffffff;
+  --secondary: #0ea5e9; /* blue */
+  --accent: #fb7185; /* coral */
+  --border: #e6e9ef;
+  --ring: rgba(109,40,217,0.2);
+}
+
+/* dark */
+.dark{
+  --bg: #0b1220;
+  --fg: #eef2ff;
+  --card: #0f1724;
+  --muted: #9ca3af;
+  --primary: #8b5cf6;
+  --primary-foreground: #08122a;
+  --secondary: #38bdf8;
+  --accent: #fb7185;
+  --border: #172030;
+  --ring: rgba(139,92,246,0.16);
+}
+
+@layer base {
+  html,body,#__next { height: 100%; }
+  body {
+    @apply bg-[color:var(--bg)] text-[color:var(--fg)] antialiased;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    line-height: 1.4;
+  }
+
+  * { box-sizing: border-box; }
+
+  h1,h2,h3,h4,h5,h6 {
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  a { color: var(--accent); transition: color .15s ease; }
+  a:hover { color: var(--primary); }
+
+  /* small helpers */
+  .card {
+    background-color: var(--card);
+    color: var(--fg);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 14px rgba(15,23,36,0.03);
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: var(--primary-foreground);
+    padding: .6rem .9rem;
+    border-radius: .5rem;
+  }
+  .badge-accent {
+    background: var(--accent);
+    color: white;
+    padding: .18rem .5rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: .75rem;
+  }
+}
