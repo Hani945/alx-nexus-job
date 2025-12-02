@@ -1,40 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Nexus Jobs — Modern Job Board Platform
 
-## Getting Started
+Nexus Jobs is a fully responsive, accessible, and feature-rich job board application built with **Next.js** and **TypeScript**. It enables users to explore, filter, and apply for job opportunities through a clean and intuitive interface — showcasing professional UI/UX design and real-world product development skills.
 
-First, run the development server:
+* [Features](#features)
+* [Technologies](#technologies)
+* [Project Structure](#project-structure)
+* [Setup Instructions](#setup-instructions)
+* [Deployment](#deployment)
+* [Screenshots](#screenshots)
+* [Future Enhancements](#future-enhancements)
+* [Contributing](#contributing)
+
+---
+
+## **Features**
+
+* Browse a wide range of job postings
+* Filter jobs by **category**, **location**, and **search term**
+* Responsive **JobCard** components for all devices
+* Accessible and user-friendly design with ARIA attributes
+* Dark mode toggle for improved UX
+* Real-time API integration to fetch job postings
+* Clear error handling and user-friendly empty states
+
+---
+
+## **Technologies**
+
+* **Frontend:** Next.js, React, TypeScript
+* **Styling:** Tailwind CSS
+* **State Management:** React Context API
+* **API:** Fetch jobs from REST endpoints
+* **Tools:** ESLint, Prettier, PostCSS
+
+---
+
+## **Project Structure**
+
+```
+nexus-job/
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── context/         # React context for state management
+│   └── pages/           # Next.js pages
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+├── postcss.config.mjs
+└── eslint.config.mjs
+```
+
+---
+
+## **Setup Instructions**
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Hani945/alx-nexus-job.git
+```
+
+2. Navigate into the project folder:
+
+```bash
+cd nexus-job
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## **Future Enhancements**
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Multi-criteria advanced filtering (salary, job type, remote options)
+* User authentication for saving favorite jobs
+* Notifications for new job postings
+* Improved UI animations and micro-interactions
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## **Contributing**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request. Ensure all code follows **Next.js** best practices and is **linted/formatted** using ESLint and Prettier.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+**Author:** Hanna
+**License:** MIT
